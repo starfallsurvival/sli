@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cryptocurrency Data</title>
+</head>
+<body>
+    <h1>Cryptocurrency Data</h1>
+    <ul>
+    {% for result in results %}
+        <li>{{ result.name }} ({{ result.symbol }}): {{ result.percentage_decrease }}% decrease</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
